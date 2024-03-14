@@ -6,7 +6,7 @@ let result =  document.getElementById("result");
 // Fetch Data from API 
 let getMovie = () => {
     let movieName = movieNameRef.value; 
-    let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`
+    let url = `https://www.omdbapi.com/?t=${movieName}&apikey=${key}`
     //If input field is empty
     if(movieName.length <= 0){ 
         result.innerHTML =  `<h3 class="msg"> Please Enter a Movie Name </h3>`; 
